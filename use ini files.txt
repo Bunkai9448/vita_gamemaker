@@ -1,0 +1,13 @@
+/// Using ini files to save and load game or to use diferent languages for your game
+
+// To know where your system stores your ini files for game maker go to:
+https://docs.yoyogames.com/source/dadiospice/002_reference/file%20handling/file%20system%20limits.html
+
+// if you find an error loading the ini file when you try the game in your vita, this is because
+// the gay maker didn't copy the ini file to your .vpk
+// to solve this, just open your vpk like any other compressed file, go to the games folder, and copy your .ini there.
+
+
+
+
+

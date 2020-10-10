@@ -1,0 +1,61 @@
+/// KEYBOARD
+// non sprite object 
+// in "event > create" se declare variable  ime = true;
+// in "event > draw"
+// //GMS is shitty and get_string() on its own doesnt work on the psvita ._.
+if (ime) {
+        msg = get_string_async("GM IME TEST: ","Bunkai");
+        ime = false;
+}   
+// TODO test outside draw, maybe it works or maybe not
+
+
+
+/// GAMEPAD TEST
+// used in the "event > step" option
+
+/// L & R
+if ( gamepad_button_check(0,gp_shoulderl) ); // gp_shoulderl = L
+    
+if ( gamepad_button_check(0,gp_shoulderr) ); // gp_shoulderr = R
+
+// DPAD BUTTONS
+if ( gamepad_button_check(0,gp_padl) ) // gp_padl = DPAD LEFT
+    x -=5;
+   
+if ( gamepad_button_check(0,gp_padr) ) // gp_padr = DPAD RIGHT
+    x +=5;
+    
+if ( gamepad_button_check(0,gp_padu) )  // gp_padu = DPAD UP
+    y -=5;
+    
+if ( gamepad_button_check(0,gp_padd) ) // gp_padd = DPAD DOWN
+    y +=5;
+
+/// X , TRIANGLE, CIRCLE & SQUARE
+
+if ( gamepad_button_check(0,gp_face1) ); // gp_face1 = CROSS
+    
+if ( gamepad_button_check(0,gp_face2) ); // gp_face2 = CIRCLE
+    
+if ( gamepad_button_check(0,gp_face3) ); // gp_face3 = SQUARE
+    
+if ( gamepad_button_check(0,gp_face4) ); // gp_face4 = TRIANGLE
+
+// SELECT & START
+
+if ( gamepad_button_check(0,gp_select) ); // gp_select = SELECT
+    
+if ( gamepad_button_check(0,gp_start) ); // gp_start = START
+
+// LEFT ANALOG STICK
+
+if ( gamepad_button_check(0,gp_axislh) ); // gp_axislh = LEFT ANOLOUGE HORIZONTAL AXES
+    
+if ( gamepad_button_check(0,gp_axislv) ); // gp_axislv = LEFT ANOLOUGE VERTICAL AXES
+    
+// RIGHT ANALOG STICK
+
+if ( gamepad_button_check(0,gp_axisrh) ); // gp_axisrh = RIGHT ANOLOUGE HORIZONTAL AXIS
+    
+if ( gamepad_button_check(0,gp_axisrv) ); // gp_axisrv = RIGHT ANOLOUGE VERTICAL AXIS

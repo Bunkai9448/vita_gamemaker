@@ -1,0 +1,65 @@
+/// PAUSE BUTTON  /// draw only in pc (in the console pause with draw freeze the screen)
+
+//add event > create
+
+pause = false;
+bgObjects = -1; // to save the draw position of the objects and be able to show them during the pause
+
+//add event > key press  // or add this code to if ( gamepad_button_check(0,BUTTON) )
+
+if (pause == false) {
+    screen_save("pause.png"); // screenshot to show during pause
+    instance_deactivate_all(true); // everything but the background 
+    pause = true;
+} else {
+    sprite_delete(bgObjects);
+    bgObjects = -1; // clean memory
+    instance_activate_all();
+    pause = false;
+}
+
+// add event > draw
+
+if ( pause == true ) {
+
+    if (bgObjects == -1) {// avoid creating unnecessary screenshots 
+        bgObjects = sprite_add("pause.png",0,0,0,0,0); 
+    }
+    draw_sprite(bgObjects,0,0,0);// show the previous screenshot to the player
+    draw_text(x,y, "PAUSED");
+}
+
+//////////////////////// 		OR
+
+
+//add event > create
+
+global.pause = false;
+bgObjects = -1; // to save the draw position of the objects and be able to show them during the pause
+
+//add event > draw
+
+
+draw_set_colour(c_white);
+
+// activate pause
+if (gamepad_button_check_pressed(0,gp_start) && global.pause <= 0)
+{  
+    isConsole = true; // draw freeze the console in pause mode
+    instance_deactivate_all(true);
+    global.pause = 1;
+
+}
+// deactivate pause
+else if (gamepad_button_check_pressed(0,gp_start) && global.pause == 1)
+{
+    global.pause = -1;
+    instance_activate_all();
+}
+
+// if pause active, print pause screen
+if (global.pause == 1 & !isConsole) {
+
+    draw_sprite(bgObjects,0,0,0);// show the previous screenshot to the player
+    draw_text(x+380,y+120, "PAUSED");
+}

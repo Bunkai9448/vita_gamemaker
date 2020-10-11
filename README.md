@@ -7,10 +7,10 @@ All the code and files have been made by me, and everything is tested and works.
 - GameMaker-Studio 1.4.1567 
 - GayMaker.1.7.6
 
-**Content summary** (Dec 10th 2020)
+**Content summary** (Dec 11th 2020)
 
 - PsVita (buttons and screen) size .psd files to use as a template. 
-- Explanation files of the gamepad, pause and ini files, to work in the vita (vpk) version
+- Explanation files of the gamepad, ime, pause and ini files, to work in the vita (vpk) version
 - Example files (object gmx, language.ini, load_lang_ini.gml) for the above mentions.
 
 **Author**

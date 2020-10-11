@@ -1,16 +1,3 @@
-/// KEYBOARD
-// non sprite object 
-// in "event > create" se declare variable  ime = true;
-// in "event > draw"
-// //GMS is shitty and get_string() on its own doesnt work on the psvita ._.
-if (ime) {
-        msg = get_string_async("GM IME TEST: ","Bunkai");
-        ime = false;
-}   
-// TODO test outside draw, maybe it works or maybe not
-
-
-
 /// GAMEPAD TEST
 // used in the "event > step" option
 

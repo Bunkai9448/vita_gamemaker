@@ -1,0 +1,40 @@
+/// KEYBOARD
+//https://docs.yoyogames.com/source/dadiospice/002_reference/asynchronous%20functions/get_string_async.html
+// non sprite object 
+
+// in "event > create" 
+
+global.ime = true;
+global.name = "no name";
+
+// in "event > draw"
+
+// comment from one silica's code [ GMS is shitty and get_string() on its own doesnt work on the psvita ._. ]
+
+if (global.ime) {
+    id_msg = get_string_async("GM IME TEST: ","Bunkai"); //  The function id is stored in the variable "msg"
+                
+    global.ime = false;
+}   
+
+draw_text(x,y,global.name);
+
+// in "event > asynchronous > Dialog"
+
+show_debug_message("Dialog Event Called");
+
+var i_d = ds_map_find_value(async_load, "id");
+if i_d == id_msg
+   {
+   if ds_map_find_value(async_load, "status")
+      {
+         global.name = ds_map_find_value(async_load, "result"); // get text from ime
+         global.ime = false; // deactivate ime
+      }
+      else // if !ds_map_find_value(async_load, "status")
+      {
+         global.name = "";
+         global.ime = false; // deactivate ime
+      }
+   }
+   

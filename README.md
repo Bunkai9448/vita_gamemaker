@@ -2,16 +2,22 @@
 This repository contains files to create games for the psVita using gamemaker 1.4.X and gay maker. 
 All the code and files have been made by me, and everything is tested and works.
 
+**Disclaimer**
+
+- Code is unclean, but it work as expected
+
 **Prerequisites**
 
 - GameMaker-Studio 1.4.1567 
 - GayMaker.1.7.6
 
-**Content summary** (Dec 11th 2020)
+**Content summary** (Jan 15th 2021)
 
 - PsVita (buttons and screen) size .psd files to use as a template. 
 - Explanation files of the gamepad, ime, pause and ini files, to work in the vita (vpk) version
 - Example files (object gmx, language.ini, load_lang_ini.gml) for the above mentions.
+- Homebrew games (game and project's code): "coordinated motion", "i am not a murderer"
+- A shader example (shader and draw object), it works on html but i haven't made it work on the vita yet.
 
 **Author**
 

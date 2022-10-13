@@ -9,4 +9,3 @@ go to the "Global" text after the tick with the mouse, click and save changes.
 Too run the tool and create the VPK:
 Go tabing Again until the "VPK" name option appears in screen and do it 
 
-BUNKAI004

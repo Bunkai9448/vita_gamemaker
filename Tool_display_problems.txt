@@ -1,0 +1,12 @@
+Some PC screens like mine have problems showing the parameters to fill,
+as a workaround I use the movement by tab. This is the parameter's order
+
+nothing > nothing > GMX_file > nothing > icon0(128x128) > pic0(960x544) > nothing 
+> bg0(840x500) > nothing > startup(280x158) > bubble_name > title_ID >
+
+go to the "Global" text after the tick with the mouse, click and save changes.
+
+Too run the tool and create the VPK:
+Go tabing Again until the "VPK" name option appears in screen and do it 
+
+BUNKAI004

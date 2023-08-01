@@ -2,7 +2,7 @@
 This repository contains files to create games for the psVita using gamemaker 1.4.X and gay maker. 
 All the code and files have been made by me, and everything is tested and works.
 
-You can also try a web version of each in https://bunkai.itch.io/
+You can also try a web version of the games in https://bunkai.itch.io/
 
 **Disclaimer**
 

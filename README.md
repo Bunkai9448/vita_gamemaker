@@ -11,7 +11,7 @@ You can also try a web version of the games in https://bunkai.itch.io/
 **Prerequisites**
 
 - GameMaker-Studio 1.4.1567 
-- GayMaker.1.7.6
+- GayMaker.1.7.6 (https://github.com/LiEnby/GayMaker)
 
 **Content summary** (Oct 13th 2022)
 
